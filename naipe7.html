@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipe 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('./images/naipe7-front.png');"></div>
+                <div class="card-back" style="background-image: url('./images/naipe7-back.png');"></div>
+            </div>
+        </div>
+        <p class="description">  
+            El orgullo, la determinación, el defensor de sus ideales. El príncipe entre dos mundos, un microcosmos que une dos planetas, punto de encuentro. La identidad en pequeños detalles como una costumbre. Patria y tradición     </div>
+    <script>
+        function flipCard(cardElement) {
+            const cardInner = cardElement.querySelector(".card-inner");
+            cardInner.classList.toggle("flipped");
+        }
+    </script>
+</body>
+</html>

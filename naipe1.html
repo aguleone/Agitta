@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipe 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('./images/naipe1-front.png');"></div>
+                <div class="card-back" style="background-image: url('./images/naipe1-back.png');"></div>
+            </div>
+        </div>
+        <p class="description">
+            Viene de la familia de los magos, de los guerreros y de la tierra de la mandarina. Su piel refleja la vitalidad de la flora regional que protege. En su estado despierto se manifiesta el árbol autóctono de Namek en su espalda, el quebracho
+        </p>
+    </div>
+    <script>
+        function flipCard(cardElement) {
+            const cardInner = cardElement.querySelector(".card-inner");
+            cardInner.classList.toggle("flipped");
+        }
+    </script>
+</body>
+</html>

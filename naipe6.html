@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipe 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('./images/naipe6-front.png');"></div>
+                <div class="card-back" style="background-image: url('./images/naipe6-back.png');"></div>
+            </div>
+        </div>
+        <p class="description">  
+            El legendario guerrero de clase baja descansa tras una batalla, de azul y oro, como su cabello, el saiyan, el titán, encarna la gloria y grandeza. El fin de una batalla da paso a la serenidad, un instante de eternidad fresca compartido con amigos, donde el tiempo parece detenerse en la calma infinita.         </p>
+    </div>
+    <script>
+        function flipCard(cardElement) {
+            const cardInner = cardElement.querySelector(".card-inner");
+            cardInner.classList.toggle("flipped");
+        }
+    </script>
+</body>
+</html>

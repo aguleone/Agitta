@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipe 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('./images/naipe4-front.png');"></div>
+                <div class="card-back" style="background-image: url('./images/naipe4-back.png');"></div>
+            </div>
+        </div>
+        <p class="description">  
+            El sabio anciano, viste sencillo, con una camisa de algodón, bombacha y alpargatas cómodas.
+            Respetado y hornado, gracias a su experiencia posee un vasto conocimiento de la vida y el universo. A pesar de su inmensa sabiduría, prefiere una vida tranquila en su campo. Humildad y modestia.
+            Él simboliza la historia de lucha y esfuerzo, conectado con el cielo y tierra que lo abrazó cual copo de nubes.
+            
+            "Hay que trabajar, hay que aprender, hay que comer, hay que descansar, y también hay que jugar; esas son las bases del entrenamiento para una buena condición." 
+        </p>
+    </div>
+    <script>
+        function flipCard(cardElement) {
+            const cardInner = cardElement.querySelector(".card-inner");
+            cardInner.classList.toggle("flipped");
+        }
+    </script>
+</body>
+</html>

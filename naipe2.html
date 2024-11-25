@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipe 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('./images/naipe2-front.png');"></div>
+                <div class="card-back" style="background-image: url('./images/naipe2-back.png');"></div>
+            </div>
+        </div>
+        <p class="description"> 
+            Él es un ser, resultado de la magia, nacido de la maldad pura concentrada 	del universo. Algunos creían que era un mito, otros prefieren no nombrarlo. 	Es elocuente e inteligente, pero inestablemente violento. Puede absorver y	convertir a quien quiera en lo que más le gusta, en chocolate, pero a esta versión 	le gusta la miel o caña, el tabaco y el vino. La mitología y lo cotidiano en una escena sátira que representa 	la creencia del chaqueño, siendo participe de los rituales de los seres en los que 	cree. Lo mundano es sagrado, La Siesta.
+        </p>
+    </div>
+    <script>
+        function flipCard(cardElement) {
+            const cardInner = cardElement.querySelector(".card-inner");
+            cardInner.classList.toggle("flipped");
+        }
+    </script>
+</body>
+</html>
